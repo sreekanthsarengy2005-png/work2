@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Odin Project</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 24px;
+        }
+
+
+        /* How it works */
+
+        .how-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+
+        /* Explore */
+
+        .explore-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+
+        /* Success Stories */
+
+        .success-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+        }
+
+
+        /* Hero image */
+
+        .hero-image {
+            width: 100%;
+            max-width: 1000px;
+            margin: auto;
+            display: block;
+        }
+
+
+
+        /* =========================
+           TABLET
+        ========================= */
+
+        @media screen and (max-width: 1024px) {
+
+            /* Navbar */
+
+            .navbar {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+
+            .menu {
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 18px;
+            }
+
+
+            /* Hero */
+
+            .hero-title {
+                font-size: 45px;
+            }
+
+
+            .hero-image {
+                width: 100%;
+            }
+
+
+            /* How it works */
+
+            .how-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+            /* Explore */
+
+            .explore-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+            /* Success stories */
+
+            .success-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media screen and (max-width: 600px) {
+
+            /* Navbar */
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+
+            .logo-text {
+                font-size: 18px;
+            }
+
+
+            .menu {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+
+            /* Hero */
+
+            .hero-title {
+                font-size: 32px;
+                line-height: 1.3;
+            }
+
+
+            .hero-text {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+
+            .hero-image {
+                width: 100%;
+            }
+
+
+            /* How it works */
+
+            .how-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+
+            /* Explore */
+
+            .explore-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+
+            /* Success stories */
+
+            .success-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+
+            /* Buttons */
+
+            .main-button {
+                width: 100%;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body class="bg-white text-gray-700">
+
+
+   
+
+    <nav class="bg-white border-b border-gray-200">
+
+        <div class="max-w-6xl mx-auto px-5 py-4">
+
+            <div class="navbar">
+
+
+                <!-- Logo -->
+
+                <div class="flex items-center gap-2">
+
+                   
+                 <img class="w-10 h-10  rounded-full"  src="image/odin-icon-22b41941.svg" alt="">
+
+                    <h2 class="logo-text text-xl font-bold text-gray-800">
+
+                        The Odin Project
+
+                    </h2>
+
+                </div>
+
+
+
+                <!-- Menu -->
+
+                <div class="menu">
+
+                    <a href="#"
+                       class="text-gray-600 hover:text-black">
+
+                        About
+
+                    </a>
+
+
+                    <a href="#"
+                       class="text-gray-600 hover:text-black">
+
+                        Paths
+
+                    </a>
+
+
+                    <a href="#"
+                       class="text-gray-600 hover:text-black">
+
+                        Community
+
+                    </a>
+
+
+                    <a href="#"
+                       class="text-gray-600 hover:text-black">
+
+                        FAQ
+
+                    </a>
+
+
+                    <a href="#"
+                       class="text-gray-600 hover:text-black">
+
+                        Login
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+  
+
+    <section class="bg-white">
+
+        <div class="max-w-6xl mx-auto px-5">
+
+
+            <div class="text-center py-16">
+
+
+                <!-- Heading -->
+
+                <h1 class="hero-title text-5xl
+                           font-medium text-gray-700
+                           max-w-6xl mx-auto mb-6">
+
+                    Your
+
+                    <span class="text-yellow-600">
+
+                        Career in Web Development
+
+                    </span>
+
+                    <br>
+
+                    Starts Here
+
+                </h1>
+
+
+
+             
+
+                <p class="hero-text text-lg
+                          text-gray-600
+                          max-w-3xl mx-auto mb-8">
+
+                    Our full stack curriculum is free and
+                    supported by a passionate open source
+                    community.
+
+                </p>
+
+
+
+
+                <a href="#"
+                   class="main-button inline-block
+                          bg-gray-800 text-white
+                          px-6 py-3 rounded
+                          hover:bg-gray-700">
+
+                    View Full Curriculum
+
+                </a>
+
+            </div>
+
+
+
+         
+
+            <div class="w-full">
+
+                <img src="image/home-isometric.svg"
+                     alt="The Odin Project"
+                     class="hero-image">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+ 
+
+    <section class="bg-gray-100">
+
+        <div class="max-w-6xl mx-auto
+                    px-5 py-16">
+
+
+            <div class="text-center">
+
+
+                <h2 class="text-3xl md:text-4xl
+                           font-semibold
+                           text-gray-700 mb-5">
+
+                    How it works
+
+                </h2>
+
+
+                <p class="max-w-3xl mx-auto
+                          text-gray-600 leading-7">
+
+                    This is the website we wish we had when
+                    we were learning on our own. We scour
+                    the internet looking for only the best
+                    resources to supplement your learning
+                    and present them in a logical order.
+
+                </p>
+
+            </div>
+
+
+
+        
+
+            <div class="how-grid mt-12">
+
+
+                <!-- Learn -->
+
+                <div class="text-center">
+
+
+                    <div class="w-20 h-20 bg-white
+                                rounded mx-auto mb-5
+                                flex items-center
+                                justify-center shadow">
+
+                        <img src="image/img-learn.svg"
+                             alt="Learn"
+                             class="w-14 h-14">
+
+                    </div>
+
+
+                    <h3 class="text-xl font-bold
+                               text-gray-700 mb-3">
+
+                        Learn
+
+                    </h3>
+
+
+                    <p class="text-gray-600 leading-7">
+
+                        Learn from a curriculum with the
+                        best curated online tutorials,
+                        blogs, and courses.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="text-center">
+
+
+                    <div class="w-20 h-20 bg-white
+                                rounded mx-auto mb-5
+                                flex items-center
+                                justify-center shadow">
+
+                        <img src="image/img-build.svg"
+                             alt="Build"
+                             class="w-14 h-14">
+
+                    </div>
+
+
+                    <h3 class="text-xl font-bold
+                               text-gray-700 mb-3">
+
+                        Build
+
+                    </h3>
+
+
+                    <p class="text-gray-600 leading-7">
+
+                        Build dozens of portfolio-worthy
+                        projects along the way, from simple
+                        scripts to full programs and websites.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="text-center">
+
+
+                    <div class="w-20 h-20 bg-white
+                                rounded mx-auto mb-5
+                                flex items-center
+                                justify-center shadow">
+
+                        <img src="image/img-connect.svg"
+                             alt="Connect"
+                             class="w-14 h-14">
+
+                    </div>
+
+
+                    <h3 class="text-xl font-bold
+                               text-gray-700 mb-3">
+
+                        Connect
+
+                    </h3>
+
+
+                    <p class="text-gray-600 leading-7">
+
+                        You're not alone. Learn and get help
+                        from our friendly community of
+                        beginner and experienced developers.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="bg-white">
+
+        <div class="max-w-5xl mx-auto
+                    px-5 py-16">
+
+
+            <h2 class="text-3xl
+                       text-center font-semibold
+                       text-gray-700 mb-10">
+
+                What you'll explore
+
+            </h2>
+
+
+
+            <!-- Explore grid -->
+
+            <div class="explore-grid">
+
+
+                <!-- HTML CSS -->
+
+                <div class="px-4 py-5
+                            bg-gray-100 rounded
+                            text-center">
+
+                    <img src="image/badge-html-css.svg"
+                         alt=""
+                         class="w-16 h-16 mx-auto mb-3">
+
+                    <p>
+                        Advanced HTML and CSS
+                    </p>
+
+                </div>
+
+
+
+                <!-- JavaScript -->
+
+                <div class="px-4 py-5
+                            bg-gray-100 rounded
+                            text-center">
+
+                    <img src="image/badge-javascript.svg"
+                         alt=""
+                         class="w-16 h-16 mx-auto mb-3">
+
+                    <p>
+                        JavaScript
+                    </p>
+
+                </div>
+
+
+
+                <!-- Database -->
+
+                <div class="px-4 py-5
+                            bg-gray-100 rounded
+                            text-center">
+
+                    <img src="image/badge-database.svg"
+                         alt=""
+                         class="w-16 h-16 mx-auto mb-3">
+
+                    <p>
+                        Databases
+                    </p>
+
+                </div>
+
+
+
+                <!-- Intermediate HTML CSS -->
+
+                <div class="px-4 py-5
+                            bg-gray-100 rounded
+                            text-center">
+
+                    <img src="image/badge-html-css.svg"
+                         alt=""
+                         class="w-16 h-16 mx-auto mb-3">
+
+                    <p>
+                        Intermediate HTML and CSS
+                    </p>
+
+                </div>
+
+
+
+                <!-- React -->
+
+                <div class="px-4 py-5
+                            bg-gray-100 rounded
+                            text-center">
+
+                    <img src="image/badge-react.svg"
+                         alt=""
+                         class="w-16 h-16 mx-auto mb-3">
+
+                    <p>
+                        React
+                    </p>
+
+                </div>
+
+
+
+                <!-- NodeJS -->
+
+                <div class="px-4 py-5
+                            bg-gray-100 rounded
+                            text-center">
+
+                    <img src="image/badge-nodejs.svg"
+                         alt=""
+                         class="w-16 h-16 mx-auto mb-3">
+
+                    <p>
+                        NodeJS
+                    </p>
+
+                </div>
+
+
+
+                <!-- Ruby on Rails -->
+
+                <div class="px-4 py-5
+                            bg-gray-100 rounded
+                            text-center">
+
+                    <img src="image/badge-ruby-on-rails.svg"
+                         alt=""
+                         class="w-16 h-16 mx-auto mb-3">
+
+                    <p>
+                        Ruby on Rails
+                    </p>
+
+                </div>
+
+
+
+                <!-- Ruby -->
+
+                <div class="px-4 py-5
+                            bg-gray-100 rounded
+                            text-center">
+
+                    <img src="image/badge-ruby.svg"
+                         alt=""
+                         class="w-16 h-16 mx-auto mb-3">
+
+                    <p>
+                        Ruby
+                    </p>
+
+                </div>
+
+
+
+                <!-- Getting Hired -->
+
+                <div class="px-4 py-5
+                            bg-gray-100 rounded
+                            text-center">
+
+                    <img src="image/badge-getting-hired.svg"
+                         alt=""
+                         class="w-16 h-16 mx-auto mb-3">
+
+                    <p>
+                        Getting Hired
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Explore Button -->
+
+            <div class="text-center mt-8">
+
+                <a href="#"
+                   class="inline-block
+                          bg-gray-800 text-white
+                          px-6 py-3 rounded
+                          hover:bg-gray-700">
+
+                    Explore curriculum
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+  
+
+    <section class="bg-gray-100">
+
+        <div class="max-w-6xl mx-auto
+                    px-5 py-16">
+
+
+            <h2 class="text-3xl md:text-4xl
+                       text-center font-semibold
+                       text-gray-700 mb-12">
+
+                Success Stories
+
+            </h2>
+
+
+
+            <div class="success-grid">
+
+
+                <!-- Story 1 -->
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold mb-3">
+
+                        Rob Pando
+
+                    </h3>
+
+
+                    <p class="text-gray-600 leading-7">
+
+                        TOP was a perfect match for my
+                        learning style. It helped me learn
+                        by actually figuring things out
+                        on my own.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Story 2 -->
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold mb-3">
+
+                        Cody Loyd
+
+                    </h3>
+
+
+                    <p class="text-gray-600 leading-7">
+
+                        Before I started the Odin Project
+                        I had literally ZERO programming
+                        experience.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Story 3 -->
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold mb-3">
+
+                        Andrej Dragojević
+
+                    </h3>
+
+
+                    <p class="text-gray-600 leading-7">
+
+                        An incredible self-paced curriculum
+                        consisting of some of the best
+                        resources available on the web.
+
+                    </p>
+
+                </div>
+
+
+
+                <!-- Story 4 -->
+
+                <div class="p-6">
+
+                    <h3 class="text-xl font-bold mb-3">
+
+                        Skip Gibson
+
+                    </h3>
+
+
+                    <p class="text-gray-600 leading-7">
+
+                        Before I found The Odin Project
+                        I had very little direction with
+                        my learning.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+  
+
+    <section class="bg-gray-800 text-white">
+
+        <div class="max-w-5xl mx-auto
+                    text-center
+                    px-5 py-16">
+
+
+            <h2 class="text-3xl md:text-4xl
+                       font-bold mb-5">
+
+                Support us!
+
+            </h2>
+
+
+            <p class="text-gray-300
+                      max-w-2xl mx-auto
+                      leading-7 mb-8">
+
+                The Odin Project is funded by the
+                community. Join us in empowering
+                learners around the globe by supporting
+                The Odin Project!
+
+            </p>
+
+
+
+            <div class="flex justify-center
+                        gap-4 flex-wrap">
+
+
+                <a href="#"
+                   class="bg-white text-gray-800
+                          px-6 py-3 rounded">
+
+                    Learn more
+
+                </a>
+
+
+                <a href="#"
+                   class="border border-white
+                          px-6 py-3 rounded">
+
+                    Donate now
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer class="bg-white">
+
+        <div class="text-center py-8 px-5">
+
+            <p class="text-gray-500">
+
+                © 2026 The Odin Project
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
